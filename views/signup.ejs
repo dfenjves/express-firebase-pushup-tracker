@@ -1,0 +1,17 @@
+
+        <h1>Firebase Auth</h1>
+        <form method="POST" action="/signup">
+            <p>Email: <input type="text" name="email" /></p>
+            <p>Password: <input type="password" name="password" /></p>
+            <p>Confirm Password: <input type="password" name="confirmPassword" /></p>
+            <% if (error) { %>
+              <p style="color: red"><%= error %></p>
+            <% } %>
+            <button type="submit">
+                Sign Up
+            </button>
+        </form>
+        <p>
+            Already have an account? Click
+            <a href="/login"> here.</a>
+        </p>
